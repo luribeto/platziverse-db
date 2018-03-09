@@ -1,0 +1,38 @@
+{
+  "name": "platziverse-db",
+  "version": "1.0.0",
+  "description": "A simple IoT platform Leo - DB Module",
+  "main": "index.js",
+  "scripts": {
+    "setup": "DEBUG=platziverse:* node setup.js",
+    "lint": "standard",
+    "test": "DEBUG=platziverse:* nyc --reporter=lcov ava tests/ --verbose"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/luribeto/platziverse.git"
+  },
+  "author": "Leonardo Uribe",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/luribeto/platziverse/issues"
+  },
+  "homepage": "https://github.com/luribeto/platziverse#readme",
+  "devDependencies": {
+    "ava": "^0.25.0",
+    "nyc": "^11.4.1",
+    "proxyquire": "^2.0.0",
+    "sinon": "^4.4.2",
+    "sqlite3": "^3.1.13",
+    "standard": "^10.0.3"
+  },
+  "dependencies": {
+    "chalk": "^2.3.0",
+    "debug": "^3.1.0",
+    "defaults": "^1.0.3",
+    "inquirer": "^5.1.0",
+    "pg": "^7.4.1",
+    "pg-hstore": "^2.3.2",
+    "sequelize": "^4.32.1"
+  }
+}
