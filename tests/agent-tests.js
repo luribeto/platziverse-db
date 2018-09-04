@@ -14,7 +14,7 @@ let MetricStub = {
   belongsTo: sinon.spy()
 }
 
-let single = Obect.assign({}, agentFixtures.single)
+let single = Object.assign({}, agentFixtures.single)
 let id = 1
 let AgentStub = null
 let db = null
