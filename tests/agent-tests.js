@@ -50,8 +50,8 @@ test.serial('Setup', t => {
   t.true(MetricStub.belongsTo.calledWith(AgentStub), 'Argument should be the AgentModel')
 })
 
-test.serial('agent#findById', async t => {
+test.serial('Agent#findById', async t => {
   let agent = await db.Agent.findById(id)
 
-  t.deepEqual(agent, agentFixtures.findById(id))
+  t.deepEqual(agent, agentFixtures.byId(id), 'should be the same')
 })

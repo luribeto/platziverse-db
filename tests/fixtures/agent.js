@@ -1,4 +1,4 @@
-'use-strict'
+'use strict'
 
 const agent = {
   id: 1,
@@ -22,6 +22,8 @@ const agents = [
 function extend (obj, values) {
   const clone = Object.assign({}, obj)
   return Object.assign(clone, values)
+
+  // return { ...obj, ...values }
 }
 
 module.exports = {
